@@ -51,3 +51,9 @@ def delete_credential(credentials):
     It creates a function that deletes credential from the credential list
     """
     credentials.delete_credentials()
+
+def find_credential(account):
+    """
+    It creates a function that finds a Credentials by an account name and returns the Credentials that belong to that account
+    """
+    return Credentials.find_credential(account)
