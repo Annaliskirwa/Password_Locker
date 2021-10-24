@@ -54,3 +54,9 @@ def __init__(self, account, userName, password):
     self.account = account
     self.userName = userName
     self.password = password
+
+def save_details(self):
+    """
+    It will create a method that stores a new credential to the credential list
+    """
+    Credentials.credential_list.append(self)
