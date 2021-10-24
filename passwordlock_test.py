@@ -25,3 +25,8 @@ class TestClass(unittest.TestCase):
         """
         self.new_user.save_user()
         self.assertEqual(len(User.user_list), 1)
+
+class TestCredentials(unittest.TestCase):
+    """
+    It creates a test class that defines test cases for credentials class
+    """
