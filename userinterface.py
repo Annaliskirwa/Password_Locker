@@ -45,3 +45,9 @@ def display_account_details():
     It creates a function that returns all the saved credentials
     """
     return Credentials.display_credentials()
+
+def delete_credential(credentials):
+    """
+    It creates a function that deletes credential from the credential list
+    """
+    credentials.delete_credentials()
