@@ -79,7 +79,7 @@ class TestCredentials(unittest.TestCase):
 
     def test_find_credentials(self):
         """
-        test to check if we can find a credential entry by account name and display the details of the credential
+        It will test to check if we can find a credential entry by account name and display the details of the credential
         """
         self.new_credential.save_details()
         test_credential = Credentials("Twitter","Mickey","Mfh45hfk") 
@@ -91,7 +91,7 @@ class TestCredentials(unittest.TestCase):
 
     def test_credential_exist(self):
         """
-        test to check if we can return a true or false based on whether we find or can't find the credential.
+        It will test to check if we can return a true or false based on whether we find or can't find the credential.
         """
         self.new_credential.save_details()
         the_credential = Credentials("Twitter", "mikeycharles", "Mfh45hfk")  
