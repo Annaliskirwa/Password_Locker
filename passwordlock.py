@@ -92,3 +92,10 @@ def if_credential_exist(cls, account):
         if credential.account == account:
             return True
     return False
+
+@classmethod
+def display_credentials(cls):
+    """
+    It will create a method that returns all items in the credentials list
+    """
+    return cls.credentials_list
