@@ -57,8 +57,23 @@ def find_credential(account):
     It creates a function that finds a Credentials by an account name and returns the Credentials that belong to that account
     """
     return Credentials.find_credential(account)
+
 def check_credentials(account):
     """
     It creates a function that checks if a Credentials exists with that account name and returns true or false
     """
     return Credentials.if_credential_exist(account)
+
+def generate_Password():
+    """
+    It creates a function that generates a random password for the user
+    """
+    auto_password = Credentials.generatePassword()
+    return auto_password
+
+def copy_password(account):
+    """
+    A function  that copies the password using the pyperclip framework
+    We import the framework then declare a function that copies the emails.
+    """
+    return Credentials.copy_password(account)
