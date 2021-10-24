@@ -65,4 +65,10 @@ def delete_credentials(self):
     """
     It will create a method that deletes credential from the credential list
     """
-    Credentials.credential_list.delete(self)
+    Credentials.credential_list.remove(self)
+
+@classmethod
+def find_credentials(cls, account):
+    """
+    It will create a method that takes in a account_name and returns a credential that matches that account_name.
+    """
