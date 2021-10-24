@@ -29,3 +29,9 @@ def delete_user(self):
     """
     It will create the method that deletes a user from the list, deletes saved account
     """
+    User.user_list.remove(self)
+
+class Credentials():
+      """
+    It will create the credentials class to create a new object of the credentials
+    """
