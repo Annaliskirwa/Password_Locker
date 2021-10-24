@@ -7,3 +7,15 @@ def create_new_user(username, password):
     """
     new_user = User(username, password)
     return new_user
+
+def save_user(user):
+    """
+    It will create a function that saves a new user
+    """
+    user.save_user()
+
+def display_user():
+    """
+    It will create a function that displays an existing user
+    """
+    return User.display_user()
