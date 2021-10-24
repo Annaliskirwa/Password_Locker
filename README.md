@@ -54,9 +54,9 @@ The user would be able to:
 * Store my existing acounts login details for various accounts that i have registered for.
 * Generate new password for an account that i haven't registered for and store it with the account name.   
 * Delete stored account login details that i do now want anymore.
-* Copy my credentials to the clipboard  
+* Copy my credentials to the clipboard    
 
-##Known bugs  
+## Known bugs    
 There are no known bugs so far.   
 ## Technologies Used
 * Python3.6  
