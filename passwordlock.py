@@ -46,3 +46,11 @@ def verify_user(cls, username, password):
         if(user.username == username and user.password == password):
             a_user == user.username
     return a_user
+
+def __init__(self, account, userName, password):
+    """
+    It will create a method that defines user credentials to be stored
+    """
+    self.account = account
+    self.userName = userName
+    self.password = password
