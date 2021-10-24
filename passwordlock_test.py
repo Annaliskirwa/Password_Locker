@@ -10,3 +10,6 @@ class TestClass(unittest.TestCase):
         """
         It creates a method that runs before each individual test methods run.
         """
+        self.new_user = User('Annalis', 'Ann000')
+
+    
