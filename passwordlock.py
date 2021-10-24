@@ -60,3 +60,9 @@ def save_details(self):
     It will create a method that stores a new credential to the credential list
     """
     Credentials.credential_list.append(self)
+
+def delete_credentials(self):
+    """
+    It will create a method that deletes credential from the credential list
+    """
+    Credentials.credential_list.delete(self)
