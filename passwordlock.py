@@ -99,3 +99,11 @@ def display_credentials(cls):
     It will create a method that returns all items in the credentials list
     """
     return cls.credentials_list
+
+def generatePassword(stringLength=8):
+    """
+    It will create a method that generates a random password string of letters and digits and special characters
+    """
+    password = string.ascii_uppercase + string.ascii_lowercase + string.digits + "~!@#$%^&*"
+    return "".join(random.choice(password) for i in range(stringLength))
+        
