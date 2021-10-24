@@ -8,7 +8,7 @@ class TestClass(unittest.TestCase):
     """
     def setUp(self):
         """
-        It creates a method that runs before each individual test methods run.
+        It creates a method that runs before each individual user test methods run.
         """
         self.new_user = User('Annalis', 'Ann000')
 
@@ -30,3 +30,16 @@ class TestCredentials(unittest.TestCase):
     """
     It creates a test class that defines test cases for credentials class
     """
+    def setUp(self):
+        """
+        It creates a method that runs before each individual credential test methods run.
+        """
+        self.new_credential = Credentials('Email', 'Annalis', 'Ann000' )
+
+    def test_init(self):
+        """
+        It will create a test case to check if a new Credentials instance has been initialized correctly
+        """
+        self.assertEqual(self.new_credential.account, 'Email')
+        self.assertEqual(self.new_credential.userName, 'Annalis')
+        self.assertEqual(self.new_credential.password,'Ann000')
