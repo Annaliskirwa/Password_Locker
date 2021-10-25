@@ -37,7 +37,7 @@ details they no longer need.
 ### Running the Application
 * To run the application, open the cloned file in terminal and run the following commands:
 
-        $ chmod +x interface.py
+        $ chmod +x userinterface.py
         $ ./userinterface.py
 * To run test for the application
         $ python3 passwordlock_test.py
